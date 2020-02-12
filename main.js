@@ -4,7 +4,7 @@ const updateColor = () => {
   const g = parseInt(document.querySelector('#green').value)
   const b = parseInt(document.querySelector('#blue').value)
   const canvasElement = document.querySelector('#canvas')
-  canvasElement.style.backgroundColor = `rgbv(${r},${g},${b})`
+  canvasElement.style.backgroundColor = `rgb(${r},${g},${b})`
   canvasElement.style.border = "thin solid black"
 }
 
