@@ -5,7 +5,7 @@ const updateColor = () => {
   const b = parseInt(document.querySelector('#blue').value)
   const v = parseInt(document.querySelector('#violet').value)
   const canvasElement = document.querySelector('#canvas')
-  canvasElement.style.backgroundColor = `rgb(${r},${g},${b})`
+  canvasElement.style.backgroundColor = `rgbv(${r},${g},${b},${v})`
   canvasElement.style.border = "thin solid black"
 }
 
@@ -13,7 +13,6 @@ const updateColor = () => {
 document.querySelector('#red').addEventListener('click', updateColor)
 document.querySelector('#blue').addEventListener('click', updateColor)
 document.querySelector('#green').addEventListener('click', updateColor)
-document.querySelector('#violet').addEventListener('click', updateColor)
 document.querySelector('#red').addEventListener('touchend', updateColor)
 document.querySelector('#blue').addEventListener('touchend', updateColor)
 document.querySelector('#green').addEventListener('touchend', updateColor)
